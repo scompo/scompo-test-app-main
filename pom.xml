@@ -21,6 +21,20 @@
 		<version>1.0.2.RELEASE</version>
 	</parent>
 
+	<repositories>
+		<repository>
+			<id>scompo-server-arifactory</id>
+			<name>scompo-server-arifactory-releases</name>
+			<url>http://scompo-server.noip.me:8080/artifactory/scompo-public-snapshots</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<!-- Add typical dependencies for a web application -->
 	<dependencies>
 
@@ -36,19 +50,6 @@
 		</dependency>
 
 	</dependencies>
-
-	<repositories>
-		<repository>
-			<id>scompo-server-arifactory</id>
-			<name>scompo-server-arifactory-releases</name>
-			<url>http://scompo-server.noip.me:8080/artifactory/scompo-public-snapshots</url>
-		</repository>
-		<repository>
-			<id>scompo-server-arifactory</id>
-			<name>scompo-server-arifactory-snapshots</name>
-			<url>http://scompo-server.noip.me:8080/artifactory/scompo-public-snapshots</url>
-		</repository>
-	</repositories>
 
 	<build>
 		<!-- plugins -->
